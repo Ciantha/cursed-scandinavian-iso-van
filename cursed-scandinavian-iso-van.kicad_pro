@@ -34,9 +34,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0,
-          "height": 2.5,
-          "width": 1.65
+          "drill": 3.048,
+          "height": 4.0,
+          "width": 4.0
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -55,7 +55,10 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "via_dangling|199450000|93031400|37987ccf-b33d-4ae8-9333-2e33ea1ec25e|00000000-0000-0000-0000-000000000000",
+        "via_dangling|202952500|35933900|c4562f15-befd-44f3-89b6-e697e435e935|00000000-0000-0000-0000-000000000000"
+      ],
       "meta": {
         "version": 2
       },
@@ -128,7 +131,7 @@
         "min_via_diameter": 0.5,
         "solder_mask_clearance": 0.0,
         "solder_mask_min_width": 0.0,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -175,7 +178,9 @@
         0.0,
         0.2,
         0.254,
-        0.381
+        0.3,
+        0.381,
+        0.6
       ],
       "via_dimensions": [
         {
@@ -432,7 +437,7 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.00381,
+        "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -460,7 +465,11 @@
       },
       {
         "netclass": "Power",
-        "pattern": "+5V"
+        "pattern": "+*"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "VBUS"
       }
     ]
   },
