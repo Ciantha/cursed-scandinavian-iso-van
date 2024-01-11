@@ -1,7 +1,7 @@
 # cursed-scandinavian-iso-van
 CC BY-NC 4.0
 
-Work in progress.
+PCB work finished by the very kind josh-l-wang
 
 ## Footprints and other tools
 
